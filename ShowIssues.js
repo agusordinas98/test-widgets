@@ -64,7 +64,4 @@ async function loadIssues() {
 }
 
 // Ejecutamos al cargar la página
-widget.addEvent("onLoad", function() {
-    // Aquí va tu código de inicialización
-    loadIssues();
-});
+loadIssues();
