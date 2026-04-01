@@ -1,7 +1,7 @@
 // URL del JSON en GitHub Pages
 const jsonUrl = "https://agusordinas98.github.io/test-widgets/response.json";
 
-function loadIssues() {
+async function loadIssues() {
     try {
         const response = await fetch(jsonUrl);
         if (!response.ok) {
