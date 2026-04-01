@@ -2,11 +2,20 @@
 const jsonUrl = "https://agusordinas98.github.io/test-widgets/response.json";
 
 async function loadIssues() {
+    // Primer mensaje: entramos a la función
+    document.getElementById("issues-container").innerHTML = "Entrando a loadIssues...";
+
     try {
+        // Avisamos que vamos a intentar cargar el JSON
+        document.getElementById("issues-container").innerHTML = "Cargando datos desde JSON...";
+
         const response = await fetch(jsonUrl);
         if (!response.ok) {
             throw new Error("Error al cargar el JSON: " + response.status);
         }
+
+        // Avisamos que el JSON se descargó
+        document.getElementById("issues-container").innerHTML = "JSON descargado, procesando...";
 
         const data = await response.json();
 
@@ -14,6 +23,9 @@ async function loadIssues() {
         if (!data.body || !data.body.issues) {
             throw new Error("Formato de JSON inválido: falta 'body.issues'");
         }
+
+        // Avisamos que encontramos issues
+        document.getElementById("issues-container").innerHTML = "Encontrados issues, construyendo tabla...";
 
         const issues = data.body.issues;
 
@@ -55,7 +67,8 @@ async function loadIssues() {
             </table>
         `;
 
-        document.getElementById("issues-container").innerHTML = html;
+        // Avisamos que la tabla está lista
+        document.getElementById("issues-container").innerHTML = "Tabla construida, mostrando resultados...<br>" + html;
 
     } catch (error) {
         document.getElementById("issues-container").innerHTML = 
