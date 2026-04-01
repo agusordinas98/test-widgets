@@ -1,0 +1,76 @@
+/* Reset some basic elements */
+body, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Body styling */
+body {
+    background-color: #4d4dee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Table headers */
+table th {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+/* Table rows */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table cells */
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for rows */
+table tr:hover {
+    background-color: #dcdcdc;
+}
+
+/* Styling for draggable rows */
+.dragEligible {
+    cursor: move;
+}
+
+/* Styling for dragged element */
+.dragEligible:active {
+    background-color: #e0e0e0;
+}
+
+/* Table caption styling */
+table caption {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Customizing the widget body */
+#widget-body {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}

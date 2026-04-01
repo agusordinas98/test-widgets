@@ -1,0 +1,23 @@
+/*
+ * @author DSIS
+ */
+
+ p {
+    margin-top:20px;
+	font-size: large;
+	font-weight: bold;
+}
+
+table {
+    border: 1px solid grey;
+}
+
+th {
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid grey;
+    padding: 5px;
+}

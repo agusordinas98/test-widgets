@@ -1,0 +1,14 @@
+/* Estilos para el Advanced Chart Widget */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    min-height: 400px;
+}
