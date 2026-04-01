@@ -4859,15 +4859,14 @@ const data = {
     }
 };
 
-
 async function loadIssues() {
     try {
-        const response = await fetch(jsonUrl);
-        if (!response.ok) {
-            throw new Error("Error al cargar el JSON: " + response.status);
-        }
+        //const response = await fetch(jsonUrl);
+        //if (!response.ok) {
+        //    throw new Error("Error al cargar el JSON: " + response.status);
+        //}
 
-        const data = await response.json();
+        //const data = await response.json();
 
         // Verificamos que tenga el bloque "issues"
         if (!data.body || !data.body.issues) {
