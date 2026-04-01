@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.stock-ok {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.low-stock {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.out-of-stock {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#inventoryInfo{
+    max-height: 700px;
+    overflow-y: auto;
+}

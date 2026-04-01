@@ -1,0 +1,60 @@
+/* Estilos para el header */
+header {
+    background-color: #f8f9fa; /* Color de fondo del header */
+    padding: 10px 0; /* Espaciado interno del header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Tamaño del texto del branding */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #343a40; /* Color del texto del navbar */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Color del texto del navbar al pasar el mouse */
+}
+
+/* Estilos para el body */
+.container {
+    margin-top: 20px; /* Margen superior para separar del header */
+}
+
+h1 {
+    margin-bottom: 20px; /* Espaciado inferior para los encabezados h1 */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+}
+
+.table th,
+.table td {
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: center; /* Alineación centrada del texto */
+    vertical-align: middle; /* Alineación vertical centrada */
+    border: 1px solid #dee2e6; /* Borde de la tabla */
+}
+
+.table th {
+    background-color: #007bff; /* Color de fondo del encabezado de la tabla */
+    color: white; /* Color del texto del encabezado de la tabla */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Color de fondo de las filas impares */
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center; /* Alineación centrada del texto */
+    padding: 10px; /* Espaciado interno del footer */
+    background-color: #343a40; /* Color de fondo del footer */
+    color: white; /* Color del texto del footer */
+    position: fixed; /* Fijar el footer en la parte inferior */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Alineación al fondo */
+}
